@@ -13,8 +13,8 @@ final class FeaturedViewModel {
     enum Status {
         case initial
         case loading
-        case didLoaded([FeaturedDisplayModel])
-        case didFailed(Error)
+        case loaded
+        case failed(Error)
     }
     
     /// View Model Configuration
@@ -57,12 +57,20 @@ final class FeaturedViewModel {
             switch result {
             case .success(let featuredItems):
                 self.featuredItems = featuredItems
-                let models = featuredItems.map { FeaturedDisplayModel(name: $0.name, image: $0.image, price: $0.price, discount: $0.discount) }
-                self.currentState = .didLoaded(models)
+                self.currentState = .loaded
             case .failure(let error):
-                self.currentState = .didFailed(error)
+                self.currentState = .failed(error)
             }
         })
+    }
+    
+    func getFeaturedItemsCount() -> Int {
+        return self.featuredItems.count
+    }
+    
+    func cellModelAt(_ index: Int) -> ItemCell.Model {
+        let item = featuredItems[index]
+        return ItemCell.Model(name: item.name, price: item.price, discount: item.discount, image: item.image)
     }
     
 }
