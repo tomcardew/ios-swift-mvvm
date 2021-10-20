@@ -45,8 +45,8 @@ class FeaturedViewController: UIViewController {
     // MARK: - View Controller Life Cycle
     override func loadView() {
         super.loadView()
-        navigationController?.navigationBar.prefersLargeTitles = true
         self.title = "Featured"
+        navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = .white
         collectionView.delegate = self
         collectionView.dataSource = self

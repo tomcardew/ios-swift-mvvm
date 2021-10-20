@@ -24,6 +24,10 @@ final class FeaturedDetailsViewModel {
         let price: Float
         let description: String
         let storeName: String
+        
+        var url: URL? {
+            return URL(string: image.replacingOccurrences(of: "http:", with: "https:"))
+        }
     }
     
     /// Properties
