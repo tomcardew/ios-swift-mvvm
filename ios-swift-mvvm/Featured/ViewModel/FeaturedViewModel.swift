@@ -68,6 +68,11 @@ final class FeaturedViewModel {
         return self.featuredItems.count
     }
     
+    func getViewModelAt(_ index: Int) -> FeaturedDetailsViewModel {
+        let model = featuredItems[index]
+        return FeaturedDetailsViewModel(featuredDetailsService: .init(itemSelected: model.id))
+    }
+    
     func cellModelAt(_ index: Int) -> ItemCell.Model {
         let item = featuredItems[index]
         return ItemCell.Model(name: item.name, price: item.price, discount: item.discount, image: item.image)

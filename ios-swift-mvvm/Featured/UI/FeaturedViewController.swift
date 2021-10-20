@@ -45,6 +45,8 @@ class FeaturedViewController: UIViewController {
     // MARK: - View Controller Life Cycle
     override func loadView() {
         super.loadView()
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "Featured"
         view.backgroundColor = .white
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -122,7 +124,9 @@ extension FeaturedViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let nViewModel = viewModel.getViewModelAt(indexPath.row)
+        let view = FeaturedDetailsViewController(viewModel: nViewModel)
+        self.navigationController?.pushViewController(view, animated: true)
     }
     
 }

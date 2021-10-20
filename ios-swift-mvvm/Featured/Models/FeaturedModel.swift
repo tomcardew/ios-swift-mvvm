@@ -14,5 +14,7 @@ struct FeaturedModel: Codable {
     let image: String
     let price: Float
     let discount: Int
+    let description: String
+    let storeName: String
     let id: String
 }

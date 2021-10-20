@@ -13,7 +13,10 @@ struct NetworkRequest {
     
     init(apiRequest: APIRequest) {
         var urlComponents = URLComponents(string: apiRequest.url.description)
-        urlComponents?.path = apiRequest.path.rawValue
+        let additionalPathParams = apiRequest.additionalPathParams?.reduce("", { x, y in
+            return "\(x!)/\(y)"
+        })
+        urlComponents?.path = apiRequest.path.rawValue + (additionalPathParams ?? "")
         urlComponents?.queryItems = apiRequest.queryTimes
         
         guard let fullURL = urlComponents?.url else {

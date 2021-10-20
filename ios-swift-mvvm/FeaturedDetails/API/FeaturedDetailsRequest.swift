@@ -1,5 +1,5 @@
 //
-//  FeaturedRequest.swift
+//  FeaturedDetailsRequest.swift
 //  ios-swift-mvvm
 //
 //  Created by Andrés Villagomez Ríos on 20/10/21.
@@ -7,20 +7,24 @@
 
 import Foundation
 
-struct FeaturedRequest: APIRequest {
+struct FeaturedDetailsRequest: APIRequest {
+    
     var url: URL {
         ApiUrl.dev.convertedUrl
     }
+    
     var path: ApiPath {
         .featured
     }
+    
     var queryTimes: [URLQueryItem]? {
         nil
     }
+    
     var method: HTTPMethod {
         .get
     }
-    var additionalPathParams: [String]? {
-        []
-    }
+    
+    var additionalPathParams: [String]?
+    
 }
