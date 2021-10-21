@@ -124,8 +124,9 @@ extension FeaturedViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let nViewModel = viewModel.getViewModelAt(indexPath.row)
-        let view = FeaturedDetailsViewController(viewModel: nViewModel)
+//        let nViewModel = viewModel.getViewModelAt(indexPath.row)
+//        let view = FeaturedDetailsViewController(viewModel: nViewModel)
+        let view = RatesViewController()
         self.navigationController?.pushViewController(view, animated: true)
     }
     

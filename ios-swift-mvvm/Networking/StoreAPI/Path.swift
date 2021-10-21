@@ -9,4 +9,5 @@ import Foundation
 
 enum ApiPath: String {
     case featured = "/api/v1/featured"
+    case exchangeRates = "/api/v1/rates"
 }

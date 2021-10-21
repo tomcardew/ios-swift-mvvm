@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8459F0602721BB3F00743ACF /* RatesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F05F2721BB3F00743ACF /* RatesRequest.swift */; };
+		8459F0622721BBC300743ACF /* RatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F0612721BBC300743ACF /* RatesService.swift */; };
+		8459F0652721BEAA00743ACF /* RateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F0642721BEAA00743ACF /* RateModel.swift */; };
+		8459F0692721C5F600743ACF /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F0682721C5F600743ACF /* ServiceFactory.swift */; };
+		8459F06B2721C6DA00743ACF /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F06A2721C6DA00743ACF /* Resolver.swift */; };
+		8459F06D2721C9AA00743ACF /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F06C2721C9AA00743ACF /* Container.swift */; };
+		8459F06F2721CA0600743ACF /* AnyServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F06E2721CA0600743ACF /* AnyServiceFactory.swift */; };
+		8459F0712721CB1900743ACF /* BasicServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F0702721CB1900743ACF /* BasicServiceFactory.swift */; };
+		8459F0742721D15200743ACF /* Array+Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F0732721D15200743ACF /* Array+Resolver.swift */; };
+		8459F0762721D16700743ACF /* Collection+FirstToResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F0752721D16700743ACF /* Collection+FirstToResolve.swift */; };
+		8459F0782721D20700743ACF /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F0772721D20700743ACF /* Injector.swift */; };
+		8459F07B2721DC7E00743ACF /* RatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F07A2721DC7E00743ACF /* RatesViewModel.swift */; };
+		8459F07E2721DDAE00743ACF /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459F07D2721DDAE00743ACF /* RatesViewController.swift */; };
 		8482E25C27205F86009C284B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482E25B27205F86009C284B /* AppDelegate.swift */; };
 		8482E25E27205F86009C284B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482E25D27205F86009C284B /* SceneDelegate.swift */; };
 		8482E26527205F88009C284B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8482E26427205F88009C284B /* Assets.xcassets */; };
@@ -34,6 +47,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8459F05F2721BB3F00743ACF /* RatesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesRequest.swift; sourceTree = "<group>"; };
+		8459F0612721BBC300743ACF /* RatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesService.swift; sourceTree = "<group>"; };
+		8459F0642721BEAA00743ACF /* RateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModel.swift; sourceTree = "<group>"; };
+		8459F0682721C5F600743ACF /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		8459F06A2721C6DA00743ACF /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		8459F06C2721C9AA00743ACF /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		8459F06E2721CA0600743ACF /* AnyServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyServiceFactory.swift; sourceTree = "<group>"; };
+		8459F0702721CB1900743ACF /* BasicServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicServiceFactory.swift; sourceTree = "<group>"; };
+		8459F0732721D15200743ACF /* Array+Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Resolver.swift"; sourceTree = "<group>"; };
+		8459F0752721D16700743ACF /* Collection+FirstToResolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+FirstToResolve.swift"; sourceTree = "<group>"; };
+		8459F0772721D20700743ACF /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		8459F07A2721DC7E00743ACF /* RatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewModel.swift; sourceTree = "<group>"; };
+		8459F07D2721DDAE00743ACF /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		8482E25827205F86009C284B /* ios-swift-mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-swift-mvvm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482E25B27205F86009C284B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8482E25D27205F86009C284B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +99,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8459F0592721B39D00743ACF /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				8459F05A2721B3A500743ACF /* Dependency Injection */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		8459F05A2721B3A500743ACF /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				8459F0662721C5C600743ACF /* DI */,
+				8459F05D2721BB1000743ACF /* Rates */,
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		8459F05D2721BB1000743ACF /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				8459F07C2721DDA300743ACF /* UI */,
+				8459F0792721DC5100743ACF /* ViewModel */,
+				8459F0632721BE9800743ACF /* Models */,
+				8459F05E2721BB3100743ACF /* API */,
+				8459F0772721D20700743ACF /* Injector.swift */,
+			);
+			path = Rates;
+			sourceTree = "<group>";
+		};
+		8459F05E2721BB3100743ACF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8459F05F2721BB3F00743ACF /* RatesRequest.swift */,
+				8459F0612721BBC300743ACF /* RatesService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8459F0632721BE9800743ACF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8459F0642721BEAA00743ACF /* RateModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8459F0662721C5C600743ACF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				8459F0722721D14800743ACF /* Extensions */,
+				8459F0672721C5EB00743ACF /* ServiceFactory */,
+				8459F06A2721C6DA00743ACF /* Resolver.swift */,
+				8459F06C2721C9AA00743ACF /* Container.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		8459F0672721C5EB00743ACF /* ServiceFactory */ = {
+			isa = PBXGroup;
+			children = (
+				8459F0682721C5F600743ACF /* ServiceFactory.swift */,
+				8459F06E2721CA0600743ACF /* AnyServiceFactory.swift */,
+				8459F0702721CB1900743ACF /* BasicServiceFactory.swift */,
+			);
+			path = ServiceFactory;
+			sourceTree = "<group>";
+		};
+		8459F0722721D14800743ACF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8459F0732721D15200743ACF /* Array+Resolver.swift */,
+				8459F0752721D16700743ACF /* Collection+FirstToResolve.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8459F0792721DC5100743ACF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8459F07A2721DC7E00743ACF /* RatesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8459F07C2721DDA300743ACF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8459F07D2721DDAE00743ACF /* RatesViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		8482E24F27205F86009C284B = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +210,7 @@
 		8482E25A27205F86009C284B /* ios-swift-mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				8459F0592721B39D00743ACF /* Examples */,
 				8482E26F27205FE5009C284B /* Networking */,
 				8482E29627208F0B009C284B /* Utils */,
 				8482E29B2720B51A009C284B /* FeaturedDetails */,
@@ -298,6 +417,10 @@
 				8482E2742720608A009C284B /* URL.swift in Sources */,
 				8482E285272066C3009C284B /* FeaturedService.swift in Sources */,
 				8482E27927206191009C284B /* APIRequest.swift in Sources */,
+				8459F06B2721C6DA00743ACF /* Resolver.swift in Sources */,
+				8459F0652721BEAA00743ACF /* RateModel.swift in Sources */,
+				8459F07E2721DDAE00743ACF /* RatesViewController.swift in Sources */,
+				8459F0712721CB1900743ACF /* BasicServiceFactory.swift in Sources */,
 				8482E27F27206322009C284B /* NetworkRequester.swift in Sources */,
 				8482E27727206121009C284B /* HTTPMethods.swift in Sources */,
 				8482E2A62720BE35009C284B /* FeaturedDetailsViewController.swift in Sources */,
@@ -308,13 +431,22 @@
 				8482E292272081BA009C284B /* ItemCell.swift in Sources */,
 				8482E27227206054009C284B /* Path.swift in Sources */,
 				8482E2A02720B666009C284B /* FeaturedDetailsService.swift in Sources */,
+				8459F0782721D20700743ACF /* Injector.swift in Sources */,
 				8482E2882720676D009C284B /* FeaturedModel.swift in Sources */,
+				8459F0602721BB3F00743ACF /* RatesRequest.swift in Sources */,
+				8459F06F2721CA0600743ACF /* AnyServiceFactory.swift in Sources */,
 				8482E29827208F18009C284B /* ImageLoader.swift in Sources */,
 				8482E28D27206BC9009C284B /* FeaturedViewModel.swift in Sources */,
+				8459F0742721D15200743ACF /* Array+Resolver.swift in Sources */,
+				8459F0692721C5F600743ACF /* ServiceFactory.swift in Sources */,
 				8482E29E2720B55B009C284B /* FeaturedDetailsRequest.swift in Sources */,
 				8482E28A272069E6009C284B /* FeaturedResponse.swift in Sources */,
+				8459F07B2721DC7E00743ACF /* RatesViewModel.swift in Sources */,
 				8482E2832720667F009C284B /* FeaturedRequest.swift in Sources */,
 				8482E27D27206219009C284B /* NetworkRequest.swift in Sources */,
+				8459F0622721BBC300743ACF /* RatesService.swift in Sources */,
+				8459F0762721D16700743ACF /* Collection+FirstToResolve.swift in Sources */,
+				8459F06D2721C9AA00743ACF /* Container.swift in Sources */,
 				8482E29A2720B08C009C284B /* Float+Extension.swift in Sources */,
 				8482E25E27205F86009C284B /* SceneDelegate.swift in Sources */,
 			);
